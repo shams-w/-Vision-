@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+    <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body class="body-cart">
+
+  <div class="cart-container">
+    <h2>Your Order Summary</h2>
+
+    <div class="cart-product">
+      <img id="cartImage" alt="Product Image">
+      <div class="cart-info">
+        <h3 id="cartName"></h3>
+        <p><strong>Color:</strong> <span id="cartColor"></span></p>
+        <p><strong>Size:</strong> <span id="cartSize"></span></p>
+        <p><strong>Price:</strong> <span id="cartPrice"></span> EGP</p>
+      </div>
+    </div>
+
+    <div class="cart-user">
+      <h3>Shipping Details</h3>
+      <p><strong>Name:</strong> <span id="userName"></span></p>
+      <p><strong>Phone:</strong> <span id="userPhone"></span></p>
+      <p><strong>Address:</strong> <span id="userAddress"></span></p>
+      <p><strong>Governorate:</strong> <span id="userGovernorate"></span></p>
+      <p><strong>Shipping Fees:</strong> <span id="shippingCost"></span> EGP</p>
+    </div>
+
+    <div class="total-box">
+      <h3>Total: <span id="totalPrice"></span> EGP</h3>
+      <div class="buttons">
+        <button class="edit-btn">Edit Order</button>
+     <button class="confirm-btn">Confirm & Submit Order</button>
+
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+    //  نحمل بيانات المنتج والمستخدم
+    const product = JSON.parse(localStorage.getItem("cartProduct"));
+    const user = JSON.parse(localStorage.getItem("userData"));
+
+    const shippingRates = {
+      "Cairo": 60,
+      "Giza": 60,
+      "Alexandria": 80,
+      "Sharqia": 80,
+      "Qalyubia": 80,
+      "Gharbia": 80,
+      "Dakahlia": 80,
+      "Suez": 80,
+      "Beni Suef": 90,
+      "Minya": 90,
+      "Assiut": 90,
+      "Qena": 90,
+      "Luxor": 90,
+      "Aswan": 90,
+      "Red Sea": 50,
+      "North Sinai": 90,
+      "South Sinai": 90
+    };
+
+    if (product && user) {
+      //  نعرض تفاصيل المنتج
+      document.getElementById("cartImage").src = product.image;
+      document.getElementById("cartName").textContent = product.name;
+      document.getElementById("cartColor").textContent = product.color;
+      document.getElementById("cartSize").textContent = product.size;
+      document.getElementById("cartPrice").textContent = product.price;
+
+      //  نعرض بيانات العميل
+      document.getElementById("userName").textContent = user.name;
+      document.getElementById("userPhone").textContent = user.phone;
+      document.getElementById("userAddress").textContent = user.address;
+      document.getElementById("userGovernorate").textContent = user.governorate;
+
+      //  نحسب مصاريف الشحن والإجمالي
+      const shipping = shippingRates[user.governorate] || 0;
+      const total = parseInt(product.price) + shipping;
+
+      document.getElementById("shippingCost").textContent = shipping;
+      document.getElementById("totalPrice").textContent = total;
+    }
+
+    //  زر التأكيد النهائي
+    document.querySelector(".confirm-btn").addEventListener("click", () => {
+      alert("Your order has been submitted successfully! 🎉");
+      localStorage.clear();
+      window.location.href = "index.html";
+    });
+    document.querySelector(".edit-btn").addEventListener("click", () =>{
+        window.location.href ="order.html";
+    })
+  </script>
+
+</body>
+</html>

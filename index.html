@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vision</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/order.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <script src="js/script.js" defer></script>
+    </head>  
+    <body>
+
+        <header class="headerb">
+        
+            <div class="container">
+
+                <div class="logo">
+                    <img src="image/VISION_no_bg.png" alt="Logo" width="130px" height="130px" class="logoimage"> 
+                </div>
+
+                <nav class="navb">
+                    <ul>
+                        <li><a href="#home" class="hh1">Home</a></li>
+                        <li><a href="#collection" class="hh1">Collections</a></li>
+                        <li><a href="#size" class="hh2">Size Guide</a></li>
+                        <li><a href="#whitehoodie" class="hh2">White Hoodie</a></li>
+                        <li><a href="#blackhoodie" class="hh2">Black Hoodie</a></li>
+                        <li><a href="#services" class="hh3">Services</a></li>
+                        <li><a href="#contact" class="hh3">Contact</a></li>
+                        <li><a href="order.html" class="hh3">Order now</a></li>
+                        <li><a href="cart.html" class="hh3">your Cart</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>  
+            <div class="headersmall">
+
+                    <div class="menu-icon">
+                        <a href="" id="carticon"><i class="fa-solid fa-cart-shopping iconh"></i></a>
+                        <a href="https://www.facebook.com/share/1Jy94QVKqg/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook iconh"></i></a>
+                        <a href="https://www.tiktok.com/@visions_.eg?_t=ZS-90qhroIzFTE&_r=1" target="_blank"><i class="fa-brands fa-tiktok iconh"></i></a>
+                        <a href="https://www.instagram.com/visions_.eg?igsh=Y2NiMmM3MTV3cTln&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram iconh"></i></a>
+                    </div>
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass iconh1"></i>
+                        <input class="Searchinput" type="text" placeholder="Search...">
+                    </div>    
+
+            </div> 
+
+        </header>
+
+        <section id="home">
+
+            <div class="home-content">
+
+                <div class="home-imag"></div>
+                <div class="overlay"></div>
+                <div class="home-text">
+                    <h1>Welcome to VISION</h1>
+                    <p>Your style,our passion</p>
+                    <a href="#collection" class="btn1">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="collection">
+            <div class="container2">
+
+                <div class="imagecol">
+
+                    <div class="imagec1">
+                        <a href="#whitehoodie"><h2>Collections white Hoodie</h2></a>
+                    </div>
+                    <div class="imagec2">
+                        <h2 class="imagti1">Collections Team</h2>
+                    </div>
+                    <div class="imagec3">
+                        <a href="#blackhoodie"><h2 class="imagti1">Collections Black Hoodie</h2></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>  
+
+        <section id="size">
+            <div class="container3">
+                <div class="titlesize"><h2>Size Guide</h2></div>
+                <div class="imagesize"></div>
+            </div>
+        </section>  
+
+        <section id="whitehoodie">
+
+            <div class="container4">
+
+                <div class="titlwhi">
+                    <h2>The Light Side</h2>
+                </div>
+
+                <div class="image-white" data-id="12345" data-name="The Light Side Hoodie">
+
+                    <div class="imagewhi">
+                        <div class="imagelwhi"></div>
+                        <div class="image2whi"></div>
+                        <div class="image3whi"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="blackhoodie">
+
+            <div class="container5">
+
+                <div class="titlblack">
+                    <h2>The Dark Side</h2>
+                </div>
+                <div class="image-black" data-id="12345" data-name="The Dark Side Hoodie">
+
+                    <div class="imageblack">
+                        <div class="imagelblack"></div>
+                        <div class="image2black"></div>
+                        <div class="image3black"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="services">
+
+            <div class="container6">
+
+                <h2 class="title6">Hoodie classic</h2>
+
+                <div class="imgtit">
+
+                    <div class="img-con6">
+                        <div class="imag-serv1" id="white-div"></div>
+                        <div class="imag-serv2" id="black-div"></div>
+                    </div>
+
+                    <div class="popc">
+                        <div class="Price-sev"><span>Price: 850 EGP</span></div>
+                        <div class="option-serv">
+                            <input type="radio" id="white" name="color" checked onchange="changHoodie(this)">
+                            <label class="label1" for="white">White</label>
+                            <input type="radio" id="black" name="color" onchange="changHoodie(this)">
+                            <label class="label1" for="black">Black</label>
+                        </div>
+                    </div>    
+                        
+                    <div class="btops">
+
+                        <div class="option-size">
+                            <label class="label2">Choose you size:</label>
+                            <select id="size-select">
+                                <option value="choose" disabled selected>Choose</option>
+                                <option value="S">Small</option>
+                                <option value="M">Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                            </select>
+                        </div>
+                        <button class="btnsr">Add Cart</button>
+                    </div>
+
+                </div>
+
+                </div>
+
+
+                </div>
+                
+            </div>
+
+            <script>
+                function changHoodie(radio){
+                    const whiteDiv = document.getElementById('white-div');
+                    const blackDiv = document.getElementById('black-div');
+
+                    if(radio.id === 'white'){
+                        whiteDiv.style.display = 'block';
+                        blackDiv.style.display = 'none';
+                    } else if(radio.id === 'black' ){
+                        whiteDiv.style.display = 'none';
+                        blackDiv.style.display = 'block';
+                    }
+                }
+            </script>
+            
+        </section>
+
+        <section id="services">
+
+            <div class="container7">
+
+                <div class="truck">
+                    <i class="fa-solid fa-truck icont7"></i>
+                    <p class="pra7">Fast delivery</p>
+                </div>
+                <div class="headphone">
+                    <i class="fa-solid fa-headphones icont7"></i>
+                    <p class="pra7">24-hour service</p>
+                </div>
+                <div class="shield">
+                    <i class="fa-solid fa-shield icont7"></i>
+                    <p class="pra7">Your safety is our priority</p>
+                </div>
+                <div class="seedling">
+                    <i class="fa-solid fa-seedling icont7"></i>
+                    <p class="pra7">Eco-friendly</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <div class="container8">
+
+                <div class="logoend">
+
+                </div>
+
+                <div class="regirsetion">
+                    <input type="email" placeholder="Your Email" checked>
+                    <button class="btnend">Register</button>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="About">
+                    <h2>About Us</h2>
+                    <p>We're local hoodie brand built on creativity,comfort,and bold style. 
+                        Every piece is made to express your vision - simple,unique,and real.
+                    </p>
+                </div>
+
+                <div class="line1"></div>
+
+
+                <div class="ficon">
+
+                    <div class="producend">
+                        <ul>
+                            <li class="bige">Product</li>
+                            <li class="prol">White Hoodie</li>
+                            <li class="prol">Black Hoodie</li>
+                        </ul>
+                    </div>
+
+                    <div class="vision">
+                        <ul>
+                            <li class="visionstyle">vision style</li>
+                            <li class="prol">Crafted for comfort & confidence</li>
+                            <li class="prol">Local brand, Global energy</li>
+                            <li class="prol">Simple looks, Strong identity</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="social">
+                        <ul>
+                            <li class="soti">Social</li>
+                            <li><a href="https://www.facebook.com/share/1Jy94QVKqg/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook iconendf"></i>  Facebook</a></li>
+                            <li><a href="https://www.tiktok.com/@visions_.eg?_t=ZS-90qhroIzFTE&_r=1" target="_blank"><i class="fa-brands fa-tiktok iconendt"></i>  TikTok</a></li>
+                            <li><a href="https://www.instagram.com/visions_.eg?igsh=Y2NiMmM3MTV3cTln&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram iconeni"></i>  Instagram</a></li>
+                            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=Vision4037@gmail.com&su=استفسار%20من%20الموقع&body=مرحبًا%20،%0A%0Aأرغب%20في%20..." target="_blank" rel="noopener"> <i class="fa-solid fa-g icong"></i>  Gmail</a></li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+                <footer>
+                    <div class="endfooter">
+                        <p>&copy; 2025 Vision. All rights reserved by <span class="heart">&#10084;</span> Vision | Crafted locally, worn globally.</p>
+                    </div>
+                </footer>
+                    
+
+
+            </div>
+
+        </section>
+
+
+        <script>
+     
+                function changHoodie(radio){
+                    const whiteDiv = document.getElementById('white-div');
+                    const blackDiv = document.getElementById('black-div');
+
+                    if(radio.id === 'white'){
+                        whiteDiv.style.display = 'block';
+                        blackDiv.style.display = 'none';
+                    } else if(radio.id === 'black' ){
+                        whiteDiv.style.display = 'none';
+                        blackDiv.style.display = 'block';
+                    }
+                }
+            
+                document.querySelector('.btnsr').addEventListener('click', function(){
+                    const color = document.querySelector('input[name="color"]:checked').id;
+                    const size = document.querySelector('#size-select').value;
+                    if (size === "choose"){
+                        alert("please select a size before adding to cart!");
+                        return;
+                    }
+                    let image = "";
+                    if (color === "white") {
+                        image = "image/3s0A2438.jpg"; 
+                    } else {
+                        image = "image/3s0A2569.jpg"; 
+                    }
+
+  // هنا بنحفظ كل البيانات في localStorage
+                    const product = {
+                        name: "Vision Hoodie",
+                        color: color,
+                        size: size,
+                        image: image,
+                        price: 850
+                    };
+
+                    localStorage.setItem("cartProduct", JSON.stringify(product));
+
+  // بعد كده نحوله لصفحة order عشان يدخل بياناته
+                    window.location.href = "order.html";
+                    });
+    
+        </script>
+
+
+
+    </body>    
+
+
+
+</html>
