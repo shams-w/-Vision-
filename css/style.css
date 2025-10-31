@@ -298,7 +298,7 @@ body{
     font-weight: 400;
     font-style: normal;
     position: absolute;
-    top: 228%;
+    top: 225%;
     left: 40%;
 
 }
@@ -1035,3 +1035,4 @@ input[type="email"]{
         margin-top: 15px;
     }
 }
+
